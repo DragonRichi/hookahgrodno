@@ -1,0 +1,191 @@
+.delivery {
+  font-family: "Manege Demo";
+  padding: 30px 0 150px 0;
+  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.9)), url(../img/uslugi-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+}
+
+.delivery-header {
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  color: #fff;
+}
+
+.delivery-wrapper {
+  padding: 66px 0 0 0;
+
+  &__container {
+    display: flex;
+  }
+}
+
+.delivery-card {
+  // .delivery-card__title
+
+  &__title {
+    font-family: "Open Sans", sans-serif;
+    color: #a5a8ff;
+    font-weight: 700;
+  }
+
+  // .delivery-card__text
+
+  &__text {
+    width: 287px;
+    font-size: 19px;
+    padding: 9px 0 0 0;
+    color: #fff;
+    height: 121px;
+  }
+
+  // .delivery-card__number
+
+  &__number {
+    span {
+      font-family: "Open Sans", sans-serif;
+      position: relative;
+      display: inline-block;
+      color: #fff;
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 100%;
+      padding: 10px 15px;
+
+      &::after {
+        content: "";
+        width: 568%;
+        height: 0px;
+        position: absolute;
+        border: 1px dashed #ffa800;
+        left: calc(100% + 13px);
+        top: 50%;
+      }
+    }
+  }
+
+  // .delivery-card__space
+
+  &__space {
+    height: 149px;
+  }
+}
+
+.delivery-edit {
+  .delivery-card__number {
+    margin: 0 0 20px 0;
+  }
+
+  .number-off {
+    &::after {
+      border: none;
+    }
+  }
+}
+
+////////////////////////////////////////////////////
+.delivery-wrapper {
+  // .delivery-wrapper__contact
+
+  &__contact {
+  }
+}
+
+.delivery-contact {
+  // .delivery-contact__title
+
+  color: #fff;
+  padding: 73px 0 79px 0;
+
+  &__title {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    padding: 0 0 30px 0;
+  }
+
+  // .delivery-contact__sub-title
+
+  &__sub-title {
+    font-size: 23px;
+    max-width: 73%;
+    margin: 0 auto;
+  }
+}
+
+.delivery-feedback {
+  color: #fff;
+  display: flex;
+
+  ul {
+    margin: 0;
+    font-size: 36px;
+    line-height: 1.3em;
+    flex: 0 0 50%;
+
+    li {
+      display: inline-block;
+
+      &:not(:first-child) {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.menu-item {
+}
+
+.menu-soc {
+}
+
+.form-feedback {
+  input[type="text"],
+  input[type="tel"] {
+    width: 94%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+
+  // .form-feedback__desc
+
+  &__desc {
+  }
+}
+
+.form-feedback-wrapper {
+}
+
+.form-feedback-header {
+  // .form-feedback-header__title
+
+  &__title {
+    margin: 0;
+  }
+
+  // .form-feedback-header__close
+
+  &__close {
+  }
+}
+
+.form-feedback-button {
+  cursor: pointer;
+  border: none;
+  padding: 13px 20px 13px 20px;
+  border-radius: 25px;
+
+  &:hover {
+    background: #ffb918;
+    transition: background 0.3s ease-in-out;
+  }
+  &:active {
+    background: #d19915;
+    transition: background 0.3s ease-in-out;
+  }
+}

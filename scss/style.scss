@@ -1,0 +1,85 @@
+@import "_normalize";
+@import "fonts";
+@import "_header";
+@import "_purpose";
+@import "_services";
+@import "_order";
+@import "_uslugi";
+@import "_delivery";
+@import "_footer";
+@import "_media";
+
+body {
+  font-family: "Manege Demo";
+  font-size: 16px;
+  font-weight: 400;
+}
+html {
+  scroll-behavior: smooth; /* свойство scroll-behavior не наследуется, применяется к прокручиваемым блокам */
+}
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+body.noscroll {
+  overflow: hidden;
+}
+.form {
+  pointer-events: none;
+}
+.form.active {
+  pointer-events: all;
+}
+
+
+.overlay {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, .5);
+	display: none;
+}
+
+.popups {
+	position: absolute;
+	width: 300px;
+	height: 180px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	padding: 40px;
+	background-color: #FFF;
+}
+
+.close-popup {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	width: 23px;
+	height: 23px;
+	cursor: pointer;
+}
+
+.close-popup:before {
+	content: '';
+	background-color: #000;
+	position: absolute;
+	height: 1px;
+	width: 31px;
+	top: 11px;
+	left: -4px;
+	transform: rotate(-45deg);
+}
+
+.close-popup:after {
+	content: '';
+	background-color: #000;
+	position: absolute;
+	height: 1px;
+	width: 31px;
+	top: 11px;
+	transform: rotate(45deg);
+	left: -4px;
+}

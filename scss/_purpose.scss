@@ -1,0 +1,141 @@
+.purpose {
+  position: relative;
+  font-family: "Manege Demo";
+  margin: 45px 0 0 0;
+  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.9)),
+    url(../img/bgabout.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+  height: 630px;
+  padding: 100px 55px 45px 55px;
+}
+.purpose-wrapper {
+  color: #fff;
+  // .purpose-wrapper__title
+
+  &__title {
+    font-size: 61px;
+    max-width: 852px;
+  }
+
+  // .purpose-wrapper__text
+
+  &__text {
+    max-width: 720px;
+    margin: 30px 0;
+    letter-spacing: 0.06em;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+  }
+
+  // .purpose-wrapper__button
+
+  &__button {
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    display: inline-block;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding: 14px 35px 14px 35px;
+    a{
+      color: #fff;
+    }
+    &:hover {
+      transition: 0.6s ease;
+      background: #ffb918;
+      color: #fff;
+    }
+  }
+}
+.form {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+  visibility: hidden;
+
+  // .form__desc
+
+  &__desc {
+  }
+}
+.form.active {
+  visibility: visible;
+  overflow-y: hidden;
+}
+.form-wrapper {
+  font-family: "Open Sans", sans-serif;
+  overflow-y: hidden;
+  position: absolute;
+  top: 24%;
+  right: 28%;
+  border: none;
+  padding: 30px;
+  background: rgb(24, 27, 24);
+  color: #fff;
+  input[type="text"],
+  input[type="tel"] {
+    width: 94%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  input:hover {
+    cursor: pointer;
+  }
+  input[type="text"]:focus,
+  input[type="tel"]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  label {
+    margin: 10px 0 0 0;
+  }
+}
+.registerbtn {
+  cursor: pointer;
+  width: 98%;
+  padding: 13px 0;
+  color: #000;
+}
+.form-header {
+  // display: flex;
+  // align-items: center;
+  // justify-content: space-between;
+  // .form-header__title
+
+  &__title {
+  }
+
+  // .form-header__close
+
+  &__close {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 46px;
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      width: 24px;
+      height: 4px;
+      background: #fff;
+    }
+    &:before {
+      transform: rotate(45deg);
+    }
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+}

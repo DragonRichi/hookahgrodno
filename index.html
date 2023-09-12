@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/style.css">
+    <title>Аренда кальянов</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="menu">
+                <div class="header__logo">
+                    <a href=""><img src="img/logo.png" alt=""></a>
+                </div>
+                <ul class="menu__list" id="menu__list">
+                    <li class="menu-item"><a href="#uslugi">Услуги</a></li>
+                    <li class="menu-item"><a href="#order">Комплектность</a> </li>
+                    <li class="menu-item"><a href="#contact">Контакты</a></li>
+                    <li class="menu-item menu-soc"><a href="https://www.instagram.com/hookahgrodno/">
+                            <img src="img/instagram.svg" target=»_blank» alt="instagram"></a></li>
+                    <!-- <li class="menu-item menu-soc"><a href=""><img src="img/facebook.svg" alt="facebook"></a></li> -->
+                    <!-- <li class="menu-item menu-soc"><a href=""><img src="img/telegram.svg" alt="telegram"></a></li> -->
+                    <!-- <li class="menu-item menu-soc"><a href=""><img src="img/vk.svg" alt="vk"></a></li> -->
+                </ul>
+                <div class="menu__hamb">
+                    <div class="menu__hamb-field" id="hamb">
+                        <span class="menu-bar"></span>
+                        <span class="menu-bar"></span>
+                        <span class="menu-bar"></span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="header__popup" id="popup"></div>
+    <section class="purpose">
+        <div class="purpose-wrapper">
+            <div class="purpose-wrapper__title">Заказать кальян на дом в Гродно</div>
+            <div class="purpose-wrapper__text">Аренда кальяна в любое место Гродно. Круглосуточная
+                бесплатная доставка за 40 минут. Сделайте заказ и наслаждайтесь ароматным дымом прямо у себя дома.
+                Теперь не нужно думать где покурить кальян в Гродно. Курите, где сами пожелаете!
+                <br><br>
+                Мы организуем доставку кальянов на важное для вас событие: свидание, корпоратив, вечеринку, день
+                рождения, свадьбу, пикник и не только. Попробуйте наши кальяны, которые отличаются вкусовыми
+                качествами, разнообразие вкусов позволяет удовлетворить любые ваши желания.
+            </div>
+            <div class="purpose-wrapper__button"><a href="#form-feedback">Оформить заказ</a></div>
+        </div>
+        <!-- <form action="/../" class="form" id="form">
+            <div class="form-wrapper">
+                <div class="form-header">
+                    <h1 class="form-header__title">Арендуйте кальян сейчас</h1>
+                    <span class="form-header__close"></span>
+                </div>
+                <p class="form__desc">И мы доставим его в течение 1 часа в любое время суток</p>
+
+                <input type="text" placeholder="Ваше имя" name="name" required>
+                <label for="name">Ваше имя</label>
+
+                <input type="tel" placeholder="Телефон" name="number" required>
+                <label for="number">Телефон</label>
+
+                <button type="submit" class="registerbtn">Арендовать кальян</button>
+            </div>
+        </form> -->
+        <div class="overlay js-overlay-thank-you">
+            <div class="popups js-thank-you">
+                <h2>Спасибо за заявку</h2>
+                <div class="close-popup js-close-thank-you"></div>
+            </div>
+        </div>
+    </section>
+    <section class="services" id="uslugi">
+        <div class="container">
+            <div class="services-info">
+                <h2 class="services-title">Услуги и цены</h2>
+                <div class="services__content">
+                    <div class="card-services home-js">
+                        <a href="uslugi.html"><img src="img/home-kalik.jpg" alt=""></a>
+                        <div class="card-services__title"><a href="uslugi.html">Кальян на дом</a></div>
+                        <div class="card-services__call home"><a href="uslugi.html">Подробнее</a></div>
+                    </div>
+                    <div class="card-services cmp-js">
+                        <a href="uslugi.html"><img src="img/home-kalik.jpg" alt=""></a>
+                        <div class="card-services__title"><a href="uslugi.html">Кальян на частное мероприятие</a></div>
+                        <div class="card-services__call cmp"><a href="uslugi.html">Подробнее</a></div>
+                    </div>
+                    <div class="card-services zav-js">
+                        <a href="uslugi.html"><img src="img/home-kalik.jpg" alt=""></a>
+                        <div class="card-services__title"><a href="uslugi.html">Кальян в заведение</a></div>
+                        <div class="card-services__call zav"><a href="uslugi.html">Подробнее</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="order" id="order">
+        <div class="order-header">Что входит в заказ</div>
+        <div class="container">
+            <div class="order-content">
+                <div class="card-order">
+                    <div class="card-order__container kalik">
+                        <img src="img/kalik.png" alt="">
+                        <span>Кальян</span>
+                    </div>
+                    <div class="card-order__container">
+                        <img src="img/chasha.png" alt="">
+                        <span> 2 чаши</span>
+                    </div>
+                    <div class="card-order__container">
+                        <img src="img/plitka.png" alt="">
+                        <span> Плитка для розжига углей</span>
+                    </div>
+                    <div class="card-order__container">
+                        <img src="img/soska.png" alt="">
+                        <span> Одноразовые мундштуки</span>
+                    </div>
+                </div>
+                <div class="card-order">
+                    <div class="card-main-kalik">
+                        <img src="img/kalik.png" alt="">
+                    </div>
+                </div>
+                <div class="card-order">
+                    <div class="card-order__container">
+                        <img src="img/calaud.png" alt="">
+                        <span>Калауд</span>
+                    </div>
+                    <div class="card-order__container">
+                        <img src="img/ugol.png" alt="">
+                        <span> Угли (3 штуки)</span>
+                    </div>
+                    <div class="card-order__container">
+                        <img src="img/chipcy.png" alt="">
+                        <span>Щипцы</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="delivery">
+        <div class="container">
+            <div class="delivery-header">Как заказать доставку кальяна на дом</div>
+            <div class="delivery-wrapper">
+                <div class="delivery-wrapper__container">
+                    <div class="delivery-content">
+                        <div class="delivery-card">
+                            <div class="delivery-card__title">ВЫ ЗАКАЗЫВАЕТЕ</div>
+                            <div class="delivery-card__text">Выберите любой кальян, чашу и табак, или обратитесь к нам
+                                за
+                                советом. Заказ вы можете сделать по телефону.</div>
+                            <div class="delivery-card__number"><span>1</span></div>
+                            <div class="delivery-card__space"></div>
+                        </div>
+                    </div>
+                    <div class="delivery-content delivery-edit">
+                        <div class="delivery-card">
+                            <div class="delivery-card__space"></div>
+                            <div class="delivery-card__number"><span>2</span></div>
+                            <div class="delivery-card__title">МЫ ГОТОВИМ И ДОСТАВЛЯЕМ</div>
+                            <div class="delivery-card__text">Наши мастера делают кальян по вашим желаниям, чтобы к
+                                указанному времени доставить кальян на дом в лучшем виде.</div>
+
+                        </div>
+                    </div>
+                    <div class="delivery-content">
+                        <div class="delivery-card">
+                            <div class="delivery-card__title">ВРУЧАЕМ</div>
+                            <div class="delivery-card__text">Мы передаем вам весь набор для удовольствия: кальян,
+                                плиту, щипцы, угли, инструкцию и мундштуки.</div>
+                            <div class="delivery-card__number"><span>3</span></div>
+                            <div class="delivery-card__space"></div>
+                        </div>
+                    </div>
+                    <div class="delivery-content delivery-edit">
+                        <div class="delivery-card">
+                            <div class="delivery-card__space space-up"></div>
+                            <div class="delivery-card__number number-off"><span>4</span></div>
+                            <div class="delivery-card__title">ЗАБИРАЕМ</div>
+                            <div class="delivery-card__text">Когда вы закончите наслаждаться кальяном, подождите, когда
+                                он
+                                остынет, и слейте воду. Кальян мыть не надо – просто положите его в коробку, и мы
+                                заберем
+                                его в
+                                удобное для вас время.</div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="delivery-wrapper__contact" id="contact">
+                    <div class="delivery-contact">
+                        <div class="delivery-contact__title">Контакты</div>
+                        <div class="delivery-contact__sub-title">Остались вопросы или у вас есть жалобы, отзывы,
+                            пожелания, предложения? Свяжитесь с нами по круглосуточному телефону или напишите нам,
+                            заполнив форму:
+                        </div>
+                    </div>
+                    <div class="delivery-feedback">
+                        <ul>
+                            <li>Телефон / WhatsApp / Telegram: <br>+375 (25) 123-45-67</li><br>
+                            <li class="menu-item"><a href=""><img src="img/instagram.svg" alt="instagram"></a>
+                            </li>
+                            <li class="menu-item"><a href=""><img src="img/telegram.svg" alt="telegram"></a>
+                            </li>
+                        </ul>
+                        <form action="/" class="form-feedback" id="form-feedback">
+                            <div class="form-feedback-wrapper">
+                                <div class="form-feedback-header">
+                                    <h1 class="form-feedback-header__title">Арендуйте кальян сейчас</h1>
+                                    <span class="form-feedback-header__close"></span>
+                                </div>
+                                <p class="form-feedback__desc">И мы доставим его в течении 1 часа в любую точка города
+                                </p>
+
+                                <label for="name">Ваше имя</label>
+                                <input type="text" placeholder="Ваше имя" name="name" id="inputName" required>
+                                <label for="number">Телефон</label>
+                                <input type="tel" placeholder="Телефон" name="number" id="inputTel" required>
+                                <button type="submit" class="form-feedback-button">Арендовать кальян</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">©2022 <span>C</span>old <span>C</span>loud - аренда кальянов в Гродно</div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/jquery.maskedinput.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

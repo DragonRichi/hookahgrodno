@@ -1,0 +1,58 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0px 39px #fff;
+  background: #0f0f0f;
+  z-index: 2;
+  &__logo {
+    display: inline-block;
+    a > img {
+      width: 167px;
+    }
+  }
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: center;
+  // .menu__list
+
+  &__list {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+  }
+}
+.menu-item {
+  font-family: "Manege Demo";
+  margin: 0 0 0 35px;
+  a {
+    color: #fff;
+  }
+  font-size: 23px;
+  a:hover {
+    cursor: pointer;
+    transition: 0.4s ease;
+    color: blue;
+  }
+}
+.menu-logo {
+}
+.menu-soc {
+  height: 33px;
+  img {
+    padding: 5px 0 0 0;
+    width: 22px;
+  }
+}
+#hamb {
+  display: none;
+}
+.header__popup {
+  display: none;
+}
